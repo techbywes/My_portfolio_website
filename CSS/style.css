@@ -307,12 +307,91 @@
   gap: 1rem;
 }
 
-.latestproject_text{
+.latestproject_text {
   text-align: center;
   color: whitesmoke;
   padding-top: 4rem;
 }
 
-.latest_project_span{
+.latest_project_span {
   color: #00effc;
 }
+.form_section_div {
+  background-color: #1e252f;
+  padding-bottom: 4rem;
+}
+.contact_me_tex {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: whitesmoke;
+  padding-top: 4rem;
+}
+
+.contactme_span {
+  color: #00effc;
+}
+
+/* FORM DESIGN  STARTS ERE */
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+.form-group input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+.submit_form_tn{
+  margin-top: 1.6rem;
+  padding: 0.8rem 1.8rem 0.8rem 1.8rem;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #00effc;
+  box-shadow: 0 0 0.1px #00effc, 0 0 0.1px #00effc, 0 0 20px #00effc,
+    0 0 0.1px #00effc;
+    text-align: center;
+}
+.form-group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#first-name,#last-name,#message{
+  outline: none;
+  background-color: #343a46;
+  color: whitesmoke;
+}
+::placeholder{
+  color: whitesmoke;
+}
+:placeholder-shown{
+  color: whitesmoke;
+}
+/* FORM DESING ENDS HERE */
