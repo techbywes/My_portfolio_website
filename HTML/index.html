@@ -16,17 +16,25 @@
             <h1 class="logo_text">
               <a href="#"></a>
               Portfolio.
-              <img src="../images/quality.png" alt="">
+              <img src="../images/quality.png" alt="" />
             </h1>
           </div>
           <ul class="menu_ul">
-            <li class="menu_li">
-              <a href="#" class="active" id="menu_a">Home</a>
+            <li id="menu_a" class="menu_li">
+              <a href="#Home" class="active">Home</a>
             </li>
-            <li class="menu_li"><a href="#" class="menu_a">About</a></li>
-            <li class="menu_li"><a href="#" class="menu_a">Services</a></li>
-            <li class="menu_li"><a href="#" class="menu_a">Portfolio</a></li>
-            <li class="menu_li"><a href="#" class="menu_a">Contact</a></li>
+            <li class="menu_li">
+              <a href="#About" class="menu_a">About</a>
+            </li>
+            <li class="menu_li">
+              <a href="#Services" class="menu_a">Services</a>
+            </li>
+            <li class="menu_li">
+              <a href="#Portfolio" class="menu_a">Portfolio</a>
+            </li>
+            <li class="menu_li">
+              <a href="#Contact" class="menu_a">Contact</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -65,7 +73,7 @@
         </div>
       </div>
     </header>
-    <section class="section_container">
+    <section id="About" class="section_container">
       <div class="innerSection_container">
         <div class="leftImage_container">
           <img src="../images/man.png" alt="" class="aboutMe_image" />
@@ -87,7 +95,7 @@
         </div>
       </div>
     </section>
-    <section class="ourServices_wrapper">
+    <section id="Services" class="ourServices_wrapper">
       <h2 class="our_services_text">
         Our <span class="ourservices_span">Services</span>
       </h2>
@@ -127,7 +135,7 @@
         </div>
       </div>
     </section>
-    <section class="latestproject_div">
+    <section id="Portfolio" class="latestproject_div">
       <h1 class="latestproject_text">
         Latest <span class="latest_project_span"> Project</span>
       </h1>
@@ -144,7 +152,7 @@
         </div>
       </div>
     </section>
-    <section class="form_section_div">
+    <section id="Contact" class="form_section_div">
       <h1 class="contact_me_tex">
         Contact <span class="contactme_span">Me</span>
       </h1>
@@ -182,7 +190,12 @@
           </div>
         </form>
       </div>
+      <footer class="footer_div">
+        <h4 class="footer_text">© 2023 Tecbywes</h4>
+      </footer>
     </section>
+    <button id="scrollUpButton" onclick="scrollToTop()">&#8593;</button>
+
     <!-- JAVASCRIPT WAS LINKED BELOW HERE -->
     <script src="../JAVASCRIPT/script.js"></script>
   </body>

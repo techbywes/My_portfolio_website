@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  scroll-behavior: smooth;
+}
 
 .header_container {
   background-color: #1e252f;
@@ -35,17 +38,25 @@
 .menu_a {
   text-decoration: none;
   color: whitesmoke;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
 }
 
 .menu_a:active {
   color: #00effc;
 }
 
+
+.menu_a:hover{
+  color: #00effc;
+  transform: scale(2.1);
+}
+
+
 .active {
   color: #00effc;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 .Hero_wrapper {
   display: flex;
@@ -122,6 +133,12 @@
   background-color: #00effc;
   box-shadow: 0 0 0.1px #00effc, 0 0 0.1px #00effc, 0 0 20px #00effc,
     0 0 0.1px #00effc;
+  transition: background-color 0.3s ease;
+}
+
+.cv_btn:hover {
+  background-color: #ffffff;
+  border: none;
 }
 
 .right_side_container {
@@ -367,7 +384,7 @@
   cursor: pointer;
 }
 
-.submit_form_tn{
+.submit_form_tn {
   margin-top: 1.6rem;
   padding: 0.8rem 1.8rem 0.8rem 1.8rem;
   border: none;
@@ -378,22 +395,54 @@
   background-color: #00effc;
   box-shadow: 0 0 0.1px #00effc, 0 0 0.1px #00effc, 0 0 20px #00effc,
     0 0 0.1px #00effc;
-    text-align: center;
+  text-align: center;
 }
-.form-group{
+.form-group {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#first-name,#last-name,#message{
+#first-name,
+#last-name,
+#message {
   outline: none;
   background-color: #343a46;
   color: whitesmoke;
 }
-::placeholder{
+::placeholder {
   color: whitesmoke;
 }
-:placeholder-shown{
+:placeholder-shown {
   color: whitesmoke;
 }
 /* FORM DESING ENDS HERE */
+
+.footer_div {
+  padding-top: 2rem;
+}
+.footer_text {
+  text-align: center;
+  color: whitesmoke;
+}
+
+/* SCROLLUP BAR STARS HERE */
+#scrollUpButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  background-color: #00effc;
+  color: #000000;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#scrollUpButton:hover {
+  background-color: #ffffff;
+}
+
+/* SCROLLUP BAR ENDS HERE */
