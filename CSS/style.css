@@ -204,3 +204,115 @@
 .righttext_andbutton_container {
   margin-left: 2rem;
 }
+
+.containers_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+.ourServices_wrapper {
+  background-color: #1e252f;
+}
+
+.our_services_text {
+  text-align: center;
+  color: whitesmoke;
+  padding-top: 4rem;
+}
+.ourservices_span {
+  color: #00effc;
+}
+.webdev_div,
+.graphicdesign_div,
+.digialmarketing_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  background-color: #343a46;
+  padding: 2rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(255, 255, 255, 0.053) inset;
+}
+
+.webdev_btn,
+.graphicdesign_btn,
+.digialmarketing_btn {
+  margin-top: 1.6rem;
+  padding: 0.8rem 1.8rem 0.8rem 1.8rem;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #00effc;
+  box-shadow: 0 0 0.1px #00effc, 0 0 0.1px #00effc, 0 0 20px #00effc,
+    0 0 0.1px #00effc;
+}
+
+.webdev_text,
+.graphicdesign_text,
+.digialmarketing_text {
+  color: whitesmoke;
+  margin-bottom: 0.6rem;
+}
+.webDev_para_text,
+.graphicdesignpara_text,
+.digialmarketing_para_text {
+  color: whitesmoke;
+  margin-bottom: 0.8rem;
+}
+.webdev_text,
+.graphicdesign_text,
+.digialmarketing_text {
+  font-size: 1.2rem;
+}
+.code_logo,
+.webdev_logo,
+.graphicdesign_logo {
+  width: 10%;
+  margin-bottom: 0.6rem;
+}
+.webDev_para_text,
+.graphicdesignpara_text,
+.digialmarketing_para_text {
+  text-align: center !important;
+}
+
+.latestproject_div {
+  background-color: #343a46;
+}
+
+.all_images_div {
+  padding: 3rem 1rem 3rem 1rem;
+}
+.projects_image {
+  width: 30%;
+  border-radius: 1rem;
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(255, 255, 255, 0.091) inset;
+}
+.images_123_div,
+.image_456_div {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.images_123_div,
+.image_456_div {
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.latestproject_text{
+  text-align: center;
+  color: whitesmoke;
+  padding-top: 4rem;
+}
+
+.latest_project_span{
+  color: #00effc;
+}
