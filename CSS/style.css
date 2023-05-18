@@ -123,12 +123,17 @@ body {
   background-color: #00effc;
   box-shadow: 0 0 0.1px #00effc, 0 0 0.1px #00effc, 0 0 20px #00effc,
     0 0 0.1px #00effc;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.6s ease;
 }
 
 .cv_btn:hover {
   background-color: #ffffff;
   border: none;
+}
+
+.cv_btn:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 }
 
 .right_side_container {
@@ -196,12 +201,17 @@ body {
   background-color: #00effc;
   box-shadow: 0 0 0.1px #00effc, 0 0 0.1px #00effc, 0 0 20px #00effc,
     0 0 0.1px #00effc;
+  transition: background-color 0.6s ease;
 }
 
-.read_more_btn:hover{
+.read_more_btn:hover {
   background-color: rgb(255, 255, 255);
 }
 
+.read_more_btn:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
 
 .me_span {
   color: #00effc;
@@ -266,6 +276,18 @@ body {
   background-color: #00effc;
   box-shadow: 0 0 0.1px #00effc, 0 0 0.1px #00effc, 0 0 20px #00effc,
     0 0 0.1px #00effc;
+  transition: background-color 0.3s ease;
+}
+
+.webdev_btn:hover,
+.graphicdesign_btn:hover,
+.digialmarketing_btn:hover {
+  background-color: whitesmoke;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 .webdev_text,
@@ -337,10 +359,10 @@ body {
   background-color: rgba(245, 245, 245, 0);
   width: 20rem;
   height: 16rem;
-  border-radius: 2rem;
+  border-radius: 1rem;
   padding-left: 3rem;
   padding-right: 3rem;
-  box-shadow: 0 0 0.1px #00effc, 0 0 0.1px #00effc, 0 0 100px #00effc00,
+  box-shadow: 0 0 0.1px #00effc, 0 0 0.1px #00effc, 0 0 6px #00effc,
     0 0 0.1px #00effc;
 }
 
@@ -416,7 +438,18 @@ body {
   box-shadow: 0 0 0.1px #00effc, 0 0 0.1px #00effc, 0 0 20px #00effc,
     0 0 0.1px #00effc;
   text-align: center;
+  transition: background-color 0.3s ease;
 }
+
+.submit_form_tn:hover {
+  background-color: whitesmoke;
+}
+
+.submit_form_tn:focus {
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
 .form-group {
   display: flex;
   justify-content: center;
@@ -459,11 +492,17 @@ body {
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  transition: background-color 0.6s ease;
 }
 
 #scrollUpButton:hover {
+  background-color: whitesmoke;
   box-shadow: 0 0 0.1px #00effc, 0 0 0.1px #00effc, 0 0 20px #00f2ff,
     0 0 0.1px #00effc;
+}
+#scrollUpButton:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 /* SCROLLUP BAR ENDS HERE */
