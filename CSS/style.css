@@ -197,6 +197,12 @@ body {
   box-shadow: 0 0 0.1px #00effc, 0 0 0.1px #00effc, 0 0 20px #00effc,
     0 0 0.1px #00effc;
 }
+
+.read_more_btn:hover{
+  background-color: rgb(255, 255, 255);
+}
+
+
 .me_span {
   color: #00effc;
 }
@@ -302,11 +308,11 @@ body {
   align-items: center;
   padding-top: 2rem;
 }
-.images_123_div{
+.images_123_div {
   gap: 2rem;
 }
 
-.image_456_div{
+.image_456_div {
   padding-bottom: 3rem;
   gap: 2rem;
 }
@@ -456,7 +462,8 @@ body {
 }
 
 #scrollUpButton:hover {
-  background-color: #ffffff;
+  box-shadow: 0 0 0.1px #00effc, 0 0 0.1px #00effc, 0 0 20px #00f2ff,
+    0 0 0.1px #00effc;
 }
 
 /* SCROLLUP BAR ENDS HERE */
