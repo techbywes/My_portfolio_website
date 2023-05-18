@@ -37,26 +37,16 @@ body {
 }
 .menu_a {
   text-decoration: none;
-  color: whitesmoke;
+  color: white;
   font-size: 1.1rem;
-  transition: transform 0.3s ease;
 }
 
-.menu_a:active {
+.menu_ul li a:focus {
   color: #00effc;
 }
 
-
-.menu_a:hover{
+.menu_a:hover {
   color: #00effc;
-  transform: scale(2.1);
-}
-
-
-.active {
-  color: #00effc;
-  text-decoration: none;
-  font-size: 1.1rem;
 }
 .Hero_wrapper {
   display: flex;
@@ -305,31 +295,55 @@ body {
   background-color: #343a46;
 }
 
-.all_images_div {
-  padding: 3rem 1rem 3rem 1rem;
+.images_123_div,
+.image_456_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
 }
+.images_123_div{
+  gap: 2rem;
+}
+
+.image_456_div{
+  padding-bottom: 3rem;
+  gap: 2rem;
+}
+
 .projects_image {
-  width: 30%;
+  width: 300px;
+  margin: 0.9rem;
+  margin-bottom: 2.6rem;
   border-radius: 1rem;
-  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.2),
-    0 0 0 1px rgba(255, 255, 255, 0.091) inset;
+  box-shadow: 0 0 0.1px #00effc, 0 0 0.1px #00effc, 0 0 10px #00000000,
+    0 0 0.1px #00effc;
 }
-.images_123_div,
-.image_456_div {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-}
-.images_123_div,
-.image_456_div {
-  margin-bottom: 2rem;
-  gap: 1rem;
+
+.div_1,
+.div_2,
+.div_3,
+.div_4,
+.div_5,
+.div_6 {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(245, 245, 245, 0);
+  width: 20rem;
+  height: 16rem;
+  border-radius: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  box-shadow: 0 0 0.1px #00effc, 0 0 0.1px #00effc, 0 0 100px #00effc00,
+    0 0 0.1px #00effc;
 }
 
 .latestproject_text {
   text-align: center;
   color: whitesmoke;
   padding-top: 4rem;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
 }
 
 .latest_project_span {
