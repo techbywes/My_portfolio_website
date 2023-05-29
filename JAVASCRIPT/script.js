@@ -9,6 +9,28 @@ const logoHomeButton = document.querySelector(".logo_text");
 
 const aboutLink = document.querySelector('a[href="#About"]');
 const aboutSection = document.getElementById("About");
+const OpenMenu = document.getElementById("menu_open");
+const CloseMenu = document.getElementById("menu_close");
+const Mobile_Menu = document.querySelector(".menu_ul");
+
+Mobile_Menu.classList.add("hidden");
+CloseMenu.classList.add("hidden");
+
+let isOpen = false;
+
+OpenMenu.addEventListener("click", () => {
+  if (!isOpen) {
+    CloseMenu.classList.remove("hidden");
+    Mobile_Menu.classList.remove("hidden");
+    OpenMenu.classList.add("hidden");
+  }
+});
+
+CloseMenu.addEventListener("click", () => {
+  Mobile_Menu.classList.add("hidden");
+  CloseMenu.classList.add("hidden");
+  OpenMenu.classList.remove("hidden");
+});
 
 downloadButton.addEventListener("click", function () {
   const link = document.createElement("a");
@@ -70,3 +92,7 @@ function scrollToTop() {
   document.documentElement.scrollTop = 0;
 }
 // SCROLL UP HELPER FOR USERS UP NAV SPEED ENDS HERE
+
+// THUNDER HERO SECTION STARTS HERE
+
+// THUNDER HERO SECTION ENDS HERE
