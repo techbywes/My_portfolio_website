@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 * {
   padding: 0;
   margin: 0;
@@ -263,6 +268,8 @@ body {
   width: 35rem;
   color: whitesmoke;
   margin-top: 1rem;
+  font-size: 1.1rem;
+  line-height: 2rem;
 }
 
 .leftImage_container {
@@ -316,6 +323,7 @@ body {
 }
 .about_me_text {
   color: whitesmoke;
+  margin-top: 4rem;
   margin-bottom: 0.6rem;
   font-size: 2.5rem;
 }
@@ -325,7 +333,7 @@ body {
 }
 
 .righttext_andbutton_container {
-  margin-left: 2rem;
+  padding-top: 3rem;
 }
 
 .containers_div {
@@ -775,38 +783,43 @@ li > h3 {
 /* MEDIA QUERIES STARTS FROM HERE */
 /* Extra Small Devices (Phones) */
 
-@media screen and (max-width: 575px) {
-  .mobile_menu_icon_div {
-    display: flex;
+@media screen and (max-width: 499px) {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
   }
 
-  .menu_a{
+  .mobile_menu_icon_div {
+    display: flex;
+    margin-top: 0.1rem;
+    margin-left: -3rem !important;
+  }
+
+  .menu_a {
     display: flex;
     padding-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .logo_icon {
-    width: 2rem;
-    height: 2rem;
-    float: right;
+    width: 1.7rem;
     margin-top: -0.2rem;
     margin-right: -2rem;
     cursor: pointer;
   }
 
   .logo_icon2 {
-    width: 2rem;
-    height: 2rem;
-    float: right;
+    width: 1.7rem;
     margin-top: -0.2rem;
+    margin-right: -2rem;
     cursor: pointer;
   }
 
   .logo_text {
-    margin-right: 4rem;
-    margin-left: 1rem;
+    margin-right: 8rem;
     white-space: nowrap;
+    font-size: 1.1rem;
   }
 
   .logo_menu_c0ntainer {
@@ -850,8 +863,9 @@ li > h3 {
 
   .developer_text,
   .developer_text2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     white-space: nowrap;
+    text-align: ce;
   }
   .logos_div {
     display: flex;
@@ -871,6 +885,191 @@ li > h3 {
     display: block;
     margin: 0 auto;
     margin-bottom: 2rem;
+  }
+
+  .right_side_container {
+    display: none;
+  }
+
+  .right_side_container {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .Hero_imge {
+    width: 18rem;
+  }
+
+  .innerSection_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .leftImage_container {
+    display: flex;
+    margin: 0 auto;
+    width: 65vw !important;
+  }
+  .images_123_div,
+  .image_456_div {
+    display: flex;
+    flex-direction: column;
+  }
+  .righttext_andbutton_container {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: -0.4rem;
+  }
+  .paragraph2_text {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+    margin-top: 2rem;
+  }
+  .leftImage_container {
+    width: 60%;
+    height: 230px;
+  }
+  .div_1,
+  .div_2,
+  .div_3,
+  .div_4,
+  .div_5,
+  .div_6 {
+    width: 90%;
+    height: 200px;
+  }
+  .projects_image {
+    width: 260px;
+  }
+
+  .about_me_text,
+  .me_span {
+    font-size: 1.6rem;
+  }
+
+  .frontend_text {
+    font-size: 1.4rem;
+  }
+
+  .skills > li {
+    font-size: 1.2rem;
+  }
+
+  .our_services_text,
+  .latestproject_text,
+  .contact_me_tex {
+    font-size: 1.9rem !important;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 576px) {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  .mobile_menu_icon_div {
+    display: flex;
+    margin-right: 2rem;
+  }
+
+  .menu_a {
+    display: flex;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .logo_icon {
+    width: 1.7rem;
+    margin-top: -0.2rem;
+    margin-right: -2rem;
+    cursor: pointer;
+  }
+
+  .logo_icon2 {
+    width: 1.7rem;
+    margin-top: -0.2rem;
+    margin-right: -2rem;
+    cursor: pointer;
+  }
+
+  .logo_text {
+    margin-right: 8rem;
+    white-space: nowrap;
+    font-size: 1.3rem;
+  }
+
+  .logo_menu_c0ntainer {
+    display: block;
+    margin-top: -1.2rem;
+  }
+
+  .logo_conatiner {
+    display: flex;
+    margin-left: -4.6rem;
+    font-size: 0.9rem;
+    gap: 2rem;
+  }
+  .menu_ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    font-size: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .Hero_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hello_text {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .name_text {
+    font-size: 2.1rem;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .developer_text,
+  .developer_text2 {
+    font-size: 1.2rem;
+    white-space: nowrap;
+    text-align: ce;
+  }
+  .logos_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .github_logo_div,
+  .linkiden_logo_div,
+  .twitter_logo_div,
+  .tiktok_logo_div {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .cv_btn {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  .right_side_container {
+    display: none;
   }
 
   .right_side_container {
@@ -903,9 +1102,10 @@ li > h3 {
     margin-left: -0.4rem;
   }
   .paragraph2_text {
-    padding-left: 8rem;
-    padding-right: 8rem;
-    font-size: 18px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
     margin-top: 2rem;
   }
   .leftImage_container {
@@ -925,16 +1125,37 @@ li > h3 {
     width: 260px;
   }
 
-  /* CSS styles for extra small devices */
+  .about_me_text,
+  .me_span {
+    font-size: 1.6rem;
+  }
+
+  .frontend_text {
+    font-size: 1.4rem;
+  }
+
+  .scrollup_btn {
+    margin-right: 1rem;
+  }
+
+  .skills > li {
+    font-size: 1.2rem;
+  }
+
+  .our_services_text,
+  .latestproject_text,
+  .contact_me_tex {
+    font-size: 1.9rem !important;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .mobile_menu_icon_div {
     display: flex;
-    margin-left: 22rem;
+    margin-left: 18rem;
   }
 
-  .menu_a{
+  .menu_a {
     display: flex;
     padding-top: 1rem;
     font-size: 1.5rem;
@@ -993,19 +1214,19 @@ li > h3 {
   }
 
   .hello_text {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
   }
 
   .name_text {
-    font-size: 4rem;
+    font-size: 3rem;
     white-space: nowrap;
     text-align: center;
   }
 
   .developer_text,
   .developer_text2 {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     white-space: nowrap;
   }
   .logos_div {
@@ -1018,8 +1239,8 @@ li > h3 {
   .linkiden_logo_div,
   .twitter_logo_div,
   .tiktok_logo_div {
-    width: 4rem;
-    height: 4rem;
+    width: 2rem;
+    height: 2rem;
   }
 
   .cv_btn {
@@ -1027,7 +1248,8 @@ li > h3 {
     margin: 0 auto;
     margin-bottom: 2rem;
     border: 2px solid rgba(245, 245, 245, 0.235);
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+    padding: 0 1.6rem 0 1.6rem;
   }
 
   .right_side_container {
@@ -1063,16 +1285,16 @@ li > h3 {
     margin-left: -0.4rem;
   }
   .about_me_text {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 1.6rem;
   }
 
   .frontend_text {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .paragraph2_text {
-    font-size: 2rem;
+    font-size: 1.1rem;
     margin-top: 2rem;
   }
   .leftImage_container {
@@ -1086,10 +1308,10 @@ li > h3 {
   .div_5,
   .div_6 {
     width: 70%;
-    height: 380px;
+    height: 300px;
   }
   .projects_image {
-    width: 500px;
+    width: 350px;
   }
 
   .read_more_btn {
@@ -1124,25 +1346,25 @@ li > h3 {
 @media screen and (min-width: 769px) and (max-width: 991px) {
   .mobile_menu_icon_div {
     display: flex;
-    margin-left: 26rem;
+    margin-left: 30rem;
   }
 
-  .menu_a{
+  .menu_a {
     display: flex;
     padding-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem !important;
   }
 
   .logo_icon {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     margin-top: -0.1rem;
     cursor: pointer;
   }
 
   .logo_icon2 {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     float: right;
     margin-top: -0.2rem;
     cursor: pointer;
@@ -1156,7 +1378,6 @@ li > h3 {
 
   .logo_menu_c0ntainer {
     display: block;
-    margin-top: 1.2rem;
   }
 
   .logo_conatiner {
@@ -1182,23 +1403,25 @@ li > h3 {
 
   .Hero_wrapper {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
   }
 
   .hello_text {
-    font-size: 3rem;
+    font-size: 2.4rem;
     text-align: center;
   }
 
   .name_text {
-    font-size: 4rem;
+    font-size: 2.3rem;
     white-space: nowrap;
     text-align: center;
   }
 
   .developer_text,
   .developer_text2 {
-    font-size: 2.4rem;
+    font-size: 1.3rem;
     white-space: nowrap;
   }
   .logos_div {
@@ -1211,8 +1434,8 @@ li > h3 {
   .linkiden_logo_div,
   .twitter_logo_div,
   .tiktok_logo_div {
-    width: 4rem;
-    height: 4rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   .cv_btn {
@@ -1220,12 +1443,13 @@ li > h3 {
     margin: 0 auto;
     margin-bottom: 2rem;
     border: 2px solid rgba(245, 245, 245, 0.235);
-    font-size: 1.6rem;
+    font-size: 1rem;
   }
 
   .right_side_container {
-    width: 19rem;
+    width: 18rem;
     height: 18rem;
+    margin-left: 4rem;
   }
 
   .Hero_imge {
@@ -1234,7 +1458,7 @@ li > h3 {
 
   .innerSection_container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .leftImage_container {
@@ -1250,27 +1474,32 @@ li > h3 {
     flex-direction: column;
   }
   .righttext_andbutton_container {
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     margin-top: 2rem;
     margin-left: -0.4rem;
   }
+
   .about_me_text {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 1.6rem;
   }
 
   .frontend_text {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .paragraph2_text {
-    font-size: 2rem;
-    margin-top: 2rem;
+    font-size: 1rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    margin-bottom: 3rem;
   }
   .leftImage_container {
-    width: 60%;
-    height: 230px;
+    width: 18rem !important;
+    height: 18rem;
+    margin-left: 8rem;
   }
   .div_1,
   .div_2,
@@ -1296,7 +1525,7 @@ li > h3 {
   }
 
   .latestproject_text {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .containers_div {
     font-size: 1.6rem;
@@ -1304,7 +1533,7 @@ li > h3 {
   }
 
   .our_services_text {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   #scrollUpButton {
@@ -1315,12 +1544,32 @@ li > h3 {
 
 /* Large Devices (Desktops and Large Screens) */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* CSS styles for large devices */
-}
+  .right_side_container {
+    width: 20rem;
+    height: 20rem;
+  }
 
+  .leftImage_container {
+    width: 20rem;
+    height: 20.4rem;
+    margin-right: 2rem;
+  }
+  .paragraph2_text {
+    padding-right: 8rem;
+  }
+  .righttext_andbutton_container {
+    padding-top: 4rem;
+  }
+  .developer_text,
+  .developer_text2 {
+    font-size: 1.6rem;
+  }
+  .div_1_6_container {
+    margin-right: 4rem;
+    margin-left: 4rem;
+  }
+}
 /* Extra Large Devices (Large Screens and TVs) */
 @media screen and (min-width: 1200px) {
   /* CSS styles for extra large devices */
 }
-
-/* MEDIA QUERIES ENDS HERE */
