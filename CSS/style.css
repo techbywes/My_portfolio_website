@@ -1020,7 +1020,7 @@ li > h3 {
 
   html,
   body {
-    font-family: "Roboto Mono", monospace;
+    font-family: Mark Pro, sans-serif;
     background: #212121;
     height: 100%;
   }
@@ -1035,7 +1035,7 @@ li > h3 {
 
   .text {
     font-weight: 100;
-    font-size: 22px;
+    font-size: 23px;
     color: #06dfe2;
   }
 
@@ -1205,14 +1205,19 @@ li > h3 {
   .linkiden_logo_div,
   .twitter_logo_div,
   .tiktok_logo_div {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
   }
 
   .cv_btn {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     margin-bottom: 2rem;
+    width: 10rem;
+    height: 3rem;
+    white-space: nowrap;
   }
 
   .right_side_container {
@@ -1266,11 +1271,24 @@ li > h3 {
   .div_4,
   .div_5,
   .div_6 {
-    width: 80%;
-    height: 210px;
+    width: 70%;
+    height: 30rem;
+    padding-top: 1rem;
+
+
+
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(35,37,49,.5)),to(rgba(15,15,24,.5)));
+    background: -webkit-linear-gradient(top,rgba(35,37,49,.5),rgba(15,15,24,.5));
+    background: linear-gradient(180deg,rgba(35,37,49,.5),rgba(15,15,24,.5));
+    border: 0.2rem solid #20222e;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-backdrop-filter: blur(54px);
+    backdrop-filter: blur(54px);
   }
   .projects_image {
-    width: 240px;
+    width: 200px;
+    height: 280px;
   }
 
   .about_me_text,
@@ -1292,20 +1310,33 @@ li > h3 {
     font-size: 1.9rem !important;
   }
 
-  .section_container{
+  .section_container {
     background-color: #10101a;
   }
 
-  .ourServices_wrapper{
+  .ourServices_wrapper {
     background-color: #10101a;
   }
 
-  .latestproject_div{
+  .latestproject_div {
     background-color: #10101a;
   }
 
-  .form_section_div{
+  .form_section_div {
     background-color: #10101a;
+  }
+
+  .logos_div {
+    padding: 0.4rem;
+  }
+  .footer_div {
+    margin-bottom: -6rem;
+    background: rgba(42, 43, 56, 0.5);
+    -webkit-backdrop-filter: blur(104px);
+    backdrop-filter: blur(104px);
+    padding: 0 1rem;
+    width: 100%;
+    z-index: 1;
   }
 }
 @media screen and (min-width: 361px) and (max-width: 414px) {
