@@ -21,7 +21,7 @@ body {
 .header_container {
   padding-top: 3rem;
   padding-bottom: 6rem;
-  background: #252734;
+  background: #10101A;
   width: 100%;
   height: 100vh;
   padding-left: 6rem;
@@ -808,7 +808,7 @@ li > h3 {
 /* Extra Small Devices (Phones) */
 
 @media screen and (max-width: 320px) {
-  *,
+  /* *,
   *::before,
   *::after {
     box-sizing: border-box;
@@ -1012,19 +1012,53 @@ li > h3 {
   .latestproject_text,
   .contact_me_tex {
     font-size: 1.9rem !important;
-  }
+  } */
 }
 
 @media screen and (min-width: 321px) and (max-width: 360px) {
-  .header_container {
-    height: 100%;
-    width: 100%;
+  .header_container{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .logo_menu_c0ntainer{
+    border-radius: 1rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    position: fixed;
+    width: 80%;
+    margin-bottom: 2rem;
+
+    
+    background: rgba(42,43,56,.5);
+    border: 0.2rem solid #2a2b37;
+    -webkit-backdrop-filter: blur(104px);
+    backdrop-filter: blur(104px);
+    border-radius: 1.3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+  }
+
+  .animatemenu{
+    animation: slideDownAnimation 1s 2s ease-in-out;
   }
 
   .menu_ul {
+    width: 80%;
+    position: fixed;
+ 
     scroll-snap-align: start;
     opacity: 1;
     animation: slideDownAnimation 1s ease-in-out;
+    z-index: 1;
+
+
+    background: rgba(42,43,56,.5);
+    border: 0.2rem solid #2a2b37;
+    -webkit-backdrop-filter: blur(104px);
+    backdrop-filter: blur(104px);
+    border-radius: 1.3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
   }
 
   @keyframes slideDownAnimation {
@@ -1041,12 +1075,16 @@ li > h3 {
   .mobile_menu_icon_div {
     display: flex;
     margin-top: -0.2rem;
-    margin-left: 4rem;
+    margin-left: 4.4rem;
   }
-  #menu_open,
+  #menu_open{
+    margin-top: 0.1rem;
+    width: 2.4rem;
+  }
+
   #menu_close {
     margin-top: 0.1rem;
-    width: 2rem;
+    width: 1.4rem;
   }
   .menu_a {
     display: flex;
@@ -1071,7 +1109,8 @@ li > h3 {
   .logo_text {
     margin-left: 1rem;
     white-space: nowrap;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    margin-left: 5.6rem;
   }
 
   .logo_menu_c0ntainer {
@@ -1081,6 +1120,7 @@ li > h3 {
 
   .logo_conatiner {
     display: flex;
+    align-items: center;
     margin-left: -4.6rem;
     font-size: 0.9rem;
     gap: 2rem;
@@ -1213,7 +1253,7 @@ li > h3 {
   .latestproject_text,
   .contact_me_tex {
     font-size: 1.9rem !important;
-  }
+  } 
 }
 @media screen and (min-width: 361px) and (max-width: 414px) {
   .header_container {
@@ -1752,9 +1792,9 @@ li > h3 {
     height: 18rem;
   }
 
-.frontend_text{
-  font-size: 3rem;
-}
+  .frontend_text {
+    font-size: 3rem;
+  }
 
   .Hero_imge {
     width: 18rem;
@@ -1767,9 +1807,9 @@ li > h3 {
 
   .leftImage_container {
     display: flex;
-    margin:  0  auto;
+    margin: 0 auto;
     height: 20% !important;
-    width: 40%!important;
+    width: 40% !important;
   }
   .images_123_div,
   .image_456_div {
@@ -1811,7 +1851,7 @@ li > h3 {
 
   .footer_text {
     margin-top: 0.6rem;
-    font-size: 2rem!important;
+    font-size: 2rem !important;
   }
 
   .skills > li {
@@ -1824,21 +1864,23 @@ li > h3 {
     font-size: 1.9rem !important;
   }
 
-  #first-name,#last-name,#message{
+  #first-name,
+  #last-name,
+  #message {
     font-size: 1.4rem;
   }
-    .form-container{
-      width: 100%;
-    }
-  
-    .footer_text {
-      margin-top: 0.6rem;
-      font-size: 2rem!important;
-    }
-  
-    .submit_form_tn{
-      font-size: 1.5rem;
-    }
+  .form-container {
+    width: 100%;
+  }
+
+  .footer_text {
+    margin-top: 0.6rem;
+    font-size: 2rem !important;
+  }
+
+  .submit_form_tn {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 834px) {
   .header_container {
@@ -1990,9 +2032,9 @@ li > h3 {
 
   .leftImage_container {
     display: flex;
-    margin:  0  auto;
+    margin: 0 auto;
     height: 20% !important;
-    width: 40%!important;
+    width: 40% !important;
   }
   .images_123_div,
   .image_456_div {
@@ -2031,19 +2073,21 @@ li > h3 {
   .me_span {
     font-size: 2.2rem;
   }
-#first-name,#last-name,#message{
-  font-size: 1.4rem;
-}
-  .form-container{
+  #first-name,
+  #last-name,
+  #message {
+    font-size: 1.4rem;
+  }
+  .form-container {
     width: 100%;
   }
 
   .footer_text {
     margin-top: 0.6rem;
-    font-size: 2rem!important;
+    font-size: 2rem !important;
   }
 
-  .submit_form_tn{
+  .submit_form_tn {
     font-size: 1.5rem;
   }
 
@@ -2207,9 +2251,9 @@ li > h3 {
 
   .leftImage_container {
     display: flex;
-    margin:  0  auto;
+    margin: 0 auto;
     height: 20% !important;
-    width: 40%!important;
+    width: 40% !important;
   }
   .images_123_div,
   .image_456_div {
@@ -2248,19 +2292,21 @@ li > h3 {
   .me_span {
     font-size: 2.2rem;
   }
-#first-name,#last-name,#message{
-  font-size: 1.4rem;
-}
-  .form-container{
+  #first-name,
+  #last-name,
+  #message {
+    font-size: 1.4rem;
+  }
+  .form-container {
     width: 100%;
   }
 
   .footer_text {
     margin-top: 0.6rem;
-    font-size: 2rem!important;
+    font-size: 2rem !important;
   }
 
-  .submit_form_tn{
+  .submit_form_tn {
     font-size: 1.5rem;
   }
 
@@ -2275,53 +2321,55 @@ li > h3 {
   }
 }
 @media screen and (min-width: 901px) and (max-width: 1440px) {
- .right_side_container{
-  height: 50vh;
- }.leftImage_container{
-  height: 51vh;
- }
+  .right_side_container {
+    width: 22rem;
+    height: 54vh;
+  }
+  .leftImage_container {
+    width: 22rem;
+    height: 54vh;
+  }
 
- #first-name,#last-name,#message{
-  font-size: 1rem;
-}
-  .form-container{
+  #first-name,
+  #last-name,
+  #message {
+    font-size: 1rem;
+  }
+  .form-container {
     width: 100%;
   }
 
   .footer_text {
     margin-top: 0.6rem;
-    font-size: 1.5rem!important;
+    font-size: 1.5rem !important;
   }
 
-  .submit_form_tn{
+  .submit_form_tn {
     font-size: 1.2rem;
   }
-
- 
 }
 
 @media screen and (min-width: 1441px) and (max-width: 2560px) {
-
-  .menu_a{
+  .menu_a {
     font-size: 2.5rem;
   }
 
-  .logo_text{
+  .logo_text {
     font-size: 4rem;
   }
-  .logo_im{
+  .logo_im {
     width: 2.5rem;
   }
 
-  .hello_text{
-    font-size: 6rem ;
+  .hello_text {
+    font-size: 6rem;
   }
 
-  .name_text{
+  .name_text {
     font-size: 5rem;
   }
 
-  .developer_text{
+  .developer_text {
     font-size: 3rem;
   }
 
@@ -2334,7 +2382,10 @@ li > h3 {
     margin-right: 2rem;
   }
 
-  .twitter_img,.tiktok_img,.linkiden_img,.github_img{
+  .twitter_img,
+  .tiktok_img,
+  .linkiden_img,
+  .github_img {
     width: 2.2rem;
   }
 
@@ -2355,82 +2406,85 @@ li > h3 {
     width: 100%;
   }
 
-  .aboutMe_image{
+  .aboutMe_image {
     width: 93%;
   }
 
-.about_me_text{
-  font-size: 6rem;
-}
+  .about_me_text {
+    font-size: 6rem;
+  }
 
-.frontend_text{
-  font-size: 3rem;
-}
+  .frontend_text {
+    font-size: 3rem;
+  }
 
-  .paragraph2_text{
-    font-size: 2rem!important;
+  .paragraph2_text {
+    font-size: 2rem !important;
     line-height: 3rem !important;
   }
 
-  .read_more_btn{
+  .read_more_btn {
     font-size: 2rem;
   }
 
-  .our_services_text{
+  .our_services_text {
     font-size: 4rem;
   }
 
-  .skills{
+  .skills {
     width: 80rem;
   }
 
-  .skill_label{
+  .skill_label {
     font-size: 2rem;
   }
-  .bar{
+  .bar {
     margin-top: 2rem;
   }
 
-  #Services{
+  #Services {
     height: 60rem;
   }
 
-  .right_side_container{
-   height: 40vh;
-  }.leftImage_container.leftImage_container{
-   height: 41vh;
+  .right_side_container {
+    height: 40vh;
   }
- 
-  #first-name,#last-name,#message{
-   font-size: 1.4rem;
- }
+  .leftImage_container.leftImage_container {
+    height: 41vh;
+  }
 
-   .form-container{
-     width: 100%;
-   }
- 
-   .footer_text {
-     margin-top: 0.6rem;
-     font-size: 2rem!important;
-   }
- 
-   .submit_form_tn{
-     font-size: 1.5rem;
-   }
- 
-   .paragraph2_text{
-     font-size: 1.5rem;
-   }
+  #first-name,
+  #last-name,
+  #message {
+    font-size: 1.4rem;
+  }
 
-   .latestproject_text{
+  .form-container {
+    width: 100%;
+  }
+
+  .footer_text {
+    margin-top: 0.6rem;
+    font-size: 2rem !important;
+  }
+
+  .submit_form_tn {
+    font-size: 1.5rem;
+  }
+
+  .paragraph2_text {
+    font-size: 1.5rem;
+  }
+
+  .latestproject_text {
     font-size: 4rem;
-   }
+  }
 
-   #Portfolio{
-      height: 80rem;
-   }
+  #Portfolio {
+    height: 80rem;
+  }
 
-   .div_1,
+  .div_1,
   .div_2,
   .div_3,
   .div_4,
@@ -2443,13 +2497,11 @@ li > h3 {
   .projects_image {
     width: 560px;
   }
-  #Contact{
+  #Contact {
     height: 60rem;
   }
 
-  form-container{
-    width: 100rem!important;
+  form-container {
+    width: 100rem !important;
   }
- }
-
-
+}
