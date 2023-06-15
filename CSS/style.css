@@ -21,7 +21,7 @@ body {
 .header_container {
   padding-top: 3rem;
   padding-bottom: 6rem;
-  background: #10101A;
+  background: #10101a;
   width: 100%;
   height: 100vh;
   padding-left: 6rem;
@@ -1016,59 +1016,93 @@ li > h3 {
 }
 
 @media screen and (min-width: 321px) and (max-width: 360px) {
-  .header_container{
+  /* ANIMATION STARTS HERE */
+
+  html,
+  body {
+    font-family: "Roboto Mono", monospace;
+    background: #212121;
+    height: 100%;
+  }
+
+  .container {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .text {
+    font-weight: 100;
+    font-size: 22px;
+    color: #06dfe2;
+  }
+
+  .dud {
+    color: whitesmoke;
+  }
+  .container {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  /* ANIMATION ENDS HERE */
+
+  .header_container {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  .logo_menu_c0ntainer{
+  .logo_menu_c0ntainer {
     border-radius: 1rem;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     position: fixed;
     width: 80%;
-    margin-bottom: 2rem;
 
-    
-    background: rgba(42,43,56,.5);
-    border: 0.2rem solid #2a2b37;
+    background: rgba(42, 43, 56, 0.5);
     -webkit-backdrop-filter: blur(104px);
     backdrop-filter: blur(104px);
-    border-radius: 1.3rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
     z-index: 2;
   }
 
-  .animatemenu{
+  .animatemenu {
     animation: slideDownAnimation 1s 2s ease-in-out;
   }
 
   .menu_ul {
     width: 80%;
     position: fixed;
- 
+    margin-top: 2.4rem !important;
+
     scroll-snap-align: start;
     opacity: 1;
     animation: slideDownAnimation 1s ease-in-out;
     z-index: 1;
 
-
-    background: rgba(42,43,56,.5);
-    border: 0.2rem solid #2a2b37;
+    background: rgba(42, 43, 56, 0.5);
     -webkit-backdrop-filter: blur(104px);
     backdrop-filter: blur(104px);
-    border-radius: 1.3rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    z-index: 2;
     z-index: 1;
   }
 
   @keyframes slideDownAnimation {
     0% {
-      transform: translatey(-100%);
+      transform: translatex(-100%);
       opacity: 0;
+
+      background: rgba(24, 24, 27, 0.511);
+    }
+    50% {
+      transform: translateY(50);
+      opacity: 4;
     }
     100% {
-      transform: translateY(10);
-      opacity: 1;
+      transform: translateYX(20);
+      opacity: 2;
     }
   }
 
@@ -1077,7 +1111,7 @@ li > h3 {
     margin-top: -0.2rem;
     margin-left: 4.4rem;
   }
-  #menu_open{
+  #menu_open {
     margin-top: 0.1rem;
     width: 2.4rem;
   }
@@ -1129,8 +1163,10 @@ li > h3 {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
-    font-size: 2rem;
-    padding-bottom: 4rem;
+    font-size: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 85%;
   }
 
   .hidden {
@@ -1138,6 +1174,7 @@ li > h3 {
   }
 
   .Hero_wrapper {
+    margin-top: 9rem;
     display: flex;
     flex-direction: column;
   }
@@ -1253,7 +1290,23 @@ li > h3 {
   .latestproject_text,
   .contact_me_tex {
     font-size: 1.9rem !important;
-  } 
+  }
+
+  .section_container{
+    background-color: #10101a;
+  }
+
+  .ourServices_wrapper{
+    background-color: #10101a;
+  }
+
+  .latestproject_div{
+    background-color: #10101a;
+  }
+
+  .form_section_div{
+    background-color: #10101a;
+  }
 }
 @media screen and (min-width: 361px) and (max-width: 414px) {
   .header_container {
