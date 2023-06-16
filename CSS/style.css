@@ -1,4 +1,3 @@
-
 *,
 *::before,
 *::after {
@@ -1029,7 +1028,7 @@ li > h3 {
   .container {
     height: 100%;
     width: 100%;
-   
+
     align-items: center;
     display: flex;
   }
@@ -1055,13 +1054,14 @@ li > h3 {
     padding-right: 2rem;
     height: 34rem;
   }
+
   .logo_menu_c0ntainer {
     border-radius: 1rem;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     position: fixed;
     width: 80%;
-   
+
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     background: rgba(42, 43, 56, 0.5);
     -webkit-backdrop-filter: blur(104px);
@@ -1146,8 +1146,8 @@ li > h3 {
   .logo_text {
     margin-left: 1rem;
     white-space: nowrap;
-    font-size: 0.8rem;
-    margin-left: 5.6rem;
+    font-size: 1rem;
+    margin-left: 5rem;
   }
 
   .logo_menu_c0ntainer {
@@ -1182,11 +1182,9 @@ li > h3 {
     flex-direction: column;
   }
 
-
-
   .hello_text {
-    font-size: 2rem;
-    font-family: 'Rubik', sans-serif;
+    font-size: 3rem;
+    font-family: "Rubik", sans-serif;
     font-weight: 600;
   }
 
@@ -1195,39 +1193,38 @@ li > h3 {
     white-space: nowrap;
     text-align: center;
 
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-weight: 600;
   }
 
-.wisdom_text{
-  color: #06dfe2;
-}
+  .wisdom_text {
+    color: #06dfe2;
+    font-size: 2rem !important;
+  }
 
-
-/* WISDOM TEXT ANIMATION STARTS FROM HERE */
-@keyframes hue {
-  from {
+  /* WISDOM TEXT ANIMATION STARTS FROM HERE */
+  @keyframes hue {
+    from {
       filter: hue-rotate(0deg);
-  }
+    }
 
-  to {
+    to {
       filter: hue-rotate(360deg);
+    }
   }
-}
 
-.changing-color {
-  animation: hue 10s infinite linear;
-  background-image: linear-gradient(92deg, #f35626 0%,#feab3a 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #f35626;
-  font-size: 2rem;
-  font-family: 'Rubik', sans-serif;
+  .changing-color {
+    animation: hue 8s infinite linear;
+    background-image: linear-gradient(90deg, #06fbff9b 0%, #06fbff9b 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    font-family: "Rubik", sans-serif;
     font-weight: 600;
-  text-align: center;
-}
-/* WISDOM TEXT ANIMATION ENDS FROM HERE */
+    text-align: center;
+  }
+  /* WISDOM TEXT ANIMATION ENDS FROM HERE */
 
   .developer_text,
   .developer_text2 {
@@ -1257,7 +1254,7 @@ li > h3 {
     width: 10rem;
     height: 3rem;
     white-space: nowrap;
-    font: 0.4rem!important;
+    font: 0.4rem !important;
   }
 
   .right_side_container {
@@ -1402,6 +1399,57 @@ li > h3 {
 
   /* ends here */
 
+  /* PROJECT ANIMATION STARTS HERE */
+
+  .add_me.effect-duke img,
+  .add_me.effect-duke p {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+  }
+
+  .add_me.effect-duke:hover img {
+    opacity: 0.1;
+    -webkit-transform: scale3d(2, 2, 1);
+    transform: scale3d(2, 2, 1);
+  }
+
+  .add_me.effect-duke h2 {
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+
+  .add_me.effect-duke p {
+    position: absolute;
+    width: 60%;
+    margin: 20px;
+    padding: 30px;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+
+    box-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.2),
+    -1px -1px 6px rgba(255, 255, 255, 0.505);
+    text-transform: none;
+    font-size: 90%;
+    opacity: 0;
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+    -webkit-transform-origin: 50% -100%;
+    transform-origin: 50% -100%;
+  }
+
+  .add_me.effect-duke:hover h2,
+  .add_me.effect-duke:hover p {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  /* PROJECT ANIMATION ENDS HERE */
+
   #addeffect,
   #coactlife {
     z-index: 1;
@@ -1459,7 +1507,7 @@ li > h3 {
     font-size: 1rem !important;
   }
 
-  .our_services_text{
+  .our_services_text {
     margin-top: 2rem;
     margin-bottom: -3rem;
   }
@@ -1468,26 +1516,26 @@ li > h3 {
     background-color: #10101a;
   }
 
-  .righttext_andbutton_container{
+  .righttext_andbutton_container {
     width: 20rem;
     height: 15rem;
     margin-top: -6rem;
     padding-bottom: -4rem;
   }
-.about_me_text{
- display: none;
-}
+  .about_me_text {
+    display: none;
+  }
   .paragraph2_text {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     line-height: 1rem;
     padding: 0 2rem;
     width: 20rem;
 
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-weight: 300;
   }
 
-  .enginner_text{
+  .enginner_text {
     color: #06dfe2;
   }
 
@@ -1517,9 +1565,8 @@ li > h3 {
     z-index: 1;
   }
 
-
-
   /* SKILLS CSS STARTS FROM HERE */
+
   /* SKILLS CSS ENDS FROM HERE */
 }
 @media screen and (min-width: 361px) and (max-width: 414px) {
