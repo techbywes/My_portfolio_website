@@ -183,3 +183,6 @@ const next = () => {
 
 next();
 // TEXT ANIMATION ENDS HERE
+
+
+
