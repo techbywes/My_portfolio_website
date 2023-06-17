@@ -8,10 +8,15 @@ const tiktokButton = document.querySelector(".tiktok_logo_div");
 const logoHomeButton = document.querySelector(".logo_text");
 
 const aboutLink = document.querySelector('a[href="#About"]');
-const aboutSection = document.getElementById("About");
 const OpenMenu = document.getElementById("menu_open");
 const CloseMenu = document.getElementById("menu_close");
 const Mobile_Menu = document.querySelector(".menu_ul");
+
+const aboutSection = document.querySelector(".section_container");
+const ServicesSection = document.querySelector(".ourServices_wrapper");
+const PortfolioSection = document.querySelector(".latestproject_div");
+const ContactSection = document.querySelector(".form_section_div");
+
 // const animate = document.querySelector(".animatemenu");
 
 Mobile_Menu.classList.add("hidden");
@@ -156,7 +161,6 @@ class TextScramble {
   }
 }
 
-
 const phrases = [
   "I'm a frontend developer",
   "With a passion for",
@@ -181,7 +185,27 @@ const next = () => {
 next();
 // TEXT ANIMATION ENDS HERE
 
-
 // SKILLS TEXT ANIMATIONS STARTS FROM HERE
 
 // SKILLS TEXT ANAIMATION ENDS FROM HERE
+
+// INTERSECTION OBSERVER STARTS FROM  HERE
+
+
+
+
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("showanimation");
+    } else {
+      entry.target.classList.remove("showanimation");
+    }
+  });
+});
+
+const hideAnimation = document.querySelectorAll('.hideanimation');
+hideAnimation.forEach(el => observer.observe(el));
+// INTERSECTION OBSERVER ENDS FROM  HERE
