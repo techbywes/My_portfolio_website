@@ -156,18 +156,15 @@ class TextScramble {
   }
 }
 
-// ——————————————————————————————————————————————————
-// Example
-// ——————————————————————————————————————————————————
 
 const phrases = [
-  "A Frontend Developer",
-  "With A Passion For",
-  "Creating Seamless UX",
-  "Committed To delivering",
-  "High-Quality Code",
-  "Got An Idea?",
-  "Lets Make It Happen!",
+  "I'm a frontend developer",
+  "With a passion for",
+  "Creating seamless UX",
+  "Committed to delivering",
+  "High-quality code",
+  "Got an idea?",
+  "Lets make it happen!",
 ];
 
 const el = document.querySelector(".text");
