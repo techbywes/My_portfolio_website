@@ -43,7 +43,7 @@ function toggleMenu() {
 downloadButton.addEventListener("click", function () {
   const link = document.createElement("a");
   link.href =
-    "https://drive.google.com/file/d/1AVGuZo7hbVzwBhdrDxKqlz_IFyFgN0TY/view?usp=share_link";
+    "https://drive.google.com/file/d/1-0_65jtJc4cjoxEu1BNcz0_G1s89bDtY/view?usp=drivesdk";
   link.download = "your-cv.pdf";
   link.click();
 });
