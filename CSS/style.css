@@ -782,50 +782,7 @@ li > h3 {
 /* MEDIA QUERIES STARTS FROM HERE */
 /* Extra Small Devices (Phones) */
 
-.like_linkup_div {
-  scroll-snap-type: y mandatory;
-  padding: 2rem 12rem!important;
-  width: 100%;
-  height: 45rem;
-}
-.like_it_div {
-  margin-top: 4rem;
-  margin-bottom: 10rem;
-}
 
-.like_it {
-  color: white;
-  margin-bottom: 3rem;
-  font-size: 3rem;
-}
-.like_it_description {
-  color: white;
-  font-size: 2rem;
-  line-height: 3.2rem;
-}
-.linkup_title {
-  color: white;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-}
-
-.link_up_description {
-  color: white;
-}
-
-.changing-color5 {
-  animation: hue 8s infinite linear;
-  background-image: linear-gradient(
-    90deg,
-    #06fbff9b 0%,
-    rgba(255, 255, 255, 0.322) 100%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "Rubik", sans-serif;
-  font-weight: 600;
-}
 @media screen and (max-width: 320px) {
   /* ANIMATION STARTS HERE */
 
@@ -836,36 +793,42 @@ li > h3 {
     height: 100%;
     scroll-behavior: smooth;
   }
+  .logos_div{
+    display: flex;
+    margin-right: 3rem;
+    gap: 2.8rem!important;
+    }
+ 
   .like_linkup_div {
     scroll-snap-type: y mandatory;
-    padding: 2rem 12rem;
+    padding: 2rem 2rem;
     width: 100%;
-    height: 45rem;
-    border: 2px solid hotpink;
+    height: 100%;
   }
   .like_it_div {
     margin-top: 4rem;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
   }
   
   .like_it {
-    color: white;
-    margin-bottom: 3rem;
-    font-size: 3rem;
+    color: #c4c4c4;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
   }
   .like_it_description {
-    color: white;
-    font-size: 2rem;
-    line-height: 3.2rem;
+    color: #c4c4c4;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
   }
   .linkup_title {
-    color: white;
+    color: #c4c4c4;
     margin-bottom: 2rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   
   .link_up_description {
-    color: white;
+    color: #c4c4c4;
+    font-size: 1.1rem;
   }
   
   .changing-color5 {
@@ -1745,7 +1708,11 @@ li > h3 {
     scroll-behavior: smooth;
   }
 
-
+  .logos_div{
+    display: flex;
+    margin-right: 3rem;
+    }
+    
 
 
 
@@ -2670,6 +2637,11 @@ li > h3 {
     height: 100%;
     scroll-behavior: smooth;
   }
+  .logos_div{
+    display: flex;
+    margin-right: 3rem;
+    gap: 2.8rem!important;
+    }
   .like_linkup_div {
     scroll-snap-type: y mandatory;
     padding: 2rem 2rem;
@@ -3580,7 +3552,11 @@ li > h3 {
     height: 100%;
     scroll-behavior: smooth;
   }
-
+  .logos_div{
+    display: flex;
+    margin-right: 3rem;
+    gap: 2.8rem!important;
+    }
   .like_linkup_div {
     scroll-snap-type: y mandatory;
     padding: 2rem 2rem;
@@ -8148,7 +8124,80 @@ li > h3 {
     height: 100%;
     scroll-behavior: smooth;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .like_linkup_div {
+    scroll-snap-type: y mandatory;
+    padding: 4rem 13rem;
+    width: 100%;
+    height: 45rem;
+  }
+  .like_it_div {
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+  }
   
+  .like_it {
+    color: white;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+  }
+  .like_it_description {
+    color: white;
+    font-size: 2rem;
+    line-height: 3.2rem;
+  }
+  .linkup_title {
+    color: white;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  .link_up_description {
+    color: white;
+    font-size: 0.8rem;
+  }
+  
+  .changing-color5 {
+    animation: hue 8s infinite linear;
+    background-image: linear-gradient(
+      90deg,
+      #06fbff9b 0%,
+      rgba(255, 255, 255, 0.322) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
   #footer_home_icon {
     width: 1.2rem !important;
     display: flex;
