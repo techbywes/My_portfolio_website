@@ -38,6 +38,19 @@ CloseMenu.addEventListener("click", () => {
   OpenMenu.classList.remove("hidden");
 });
 
+// closes menu when users click outside the meu starts here
+document.addEventListener("mousedown", event => {
+  const target = event.target;
+  const isMenuClicked = target.closest(".menu_ul");
+
+  if (!isMenuClicked) {
+    Mobile_Menu.classList.add("hidden");
+    OpenMenu.classList.remove("hidden");
+    CloseMenu.classList.add("hidden");
+  }
+});
+// closes menu when users click outside the meu ends here
+
 // MENU ANIMATE STARTS HERE
 function toggleMenu() {
   let menu = document.querySelector(".menu");
@@ -104,6 +117,7 @@ function scrollToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
 // SCROLL UP HELPER FOR USERS UP NAV SPEED ENDS HERE
 
 // TEXT ANIMATION STARTS HERE
@@ -184,10 +198,6 @@ const next = () => {
 
 next();
 // TEXT ANIMATION ENDS HERE
-
-// SKILLS TEXT ANIMATIONS STARTS FROM HERE
-
-// SKILLS TEXT ANAIMATION ENDS FROM HERE
 
 // INTERSECTION OBSERVER STARTS FROM  HERE
 
