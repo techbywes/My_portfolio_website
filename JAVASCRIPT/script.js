@@ -191,10 +191,6 @@ next();
 
 // INTERSECTION OBSERVER STARTS FROM  HERE
 
-
-
-
-
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     console.log(entry);
@@ -206,6 +202,6 @@ const observer = new IntersectionObserver(entries => {
   });
 });
 
-const hideAnimation = document.querySelectorAll('.hideanimation');
+const hideAnimation = document.querySelectorAll(".hideanimation");
 hideAnimation.forEach(el => observer.observe(el));
 // INTERSECTION OBSERVER ENDS FROM  HERE
