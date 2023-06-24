@@ -31,14 +31,14 @@ let isOpen = false;
 
 menu_items1.addEventListener("click", () => {
   if (!isOpen) {
-    CloseMenu.classList.remove("hidden");
+    CloseMenu.classList.add("hidden");
     OpenMenu.classList.remove("hidden");
     Mobile_Menu.classList.add("hidden");
   }
 })
 menu_items2.addEventListener("click", ()=> {
   if (!isOpen) {
-    CloseMenu.classList.remove("hidden");
+    CloseMenu.classList.add("hidden");
     OpenMenu.classList.remove("hidden");
     Mobile_Menu.classList.add("hidden");
   }
@@ -46,7 +46,7 @@ menu_items2.addEventListener("click", ()=> {
 
 menu_items3.addEventListener("click", ()=> {
   if (!isOpen) {
-    CloseMenu.classList.remove("hidden");
+    CloseMenu.classList.add("hidden");
     OpenMenu.classList.remove("hidden");
     Mobile_Menu.classList.add("hidden");
   }
@@ -54,7 +54,7 @@ menu_items3.addEventListener("click", ()=> {
 
 menu_items4.addEventListener("click", ()=> {
   if (!isOpen) {
-    CloseMenu.classList.remove("hidden");
+    CloseMenu.classList.add("hidden");
     OpenMenu.classList.remove("hidden");
     Mobile_Menu.classList.add("hidden");
   }
@@ -62,7 +62,7 @@ menu_items4.addEventListener("click", ()=> {
 
 menu_items5.addEventListener("click", ()=> {
   if (!isOpen) {
-    CloseMenu.classList.remove("hidden");
+    CloseMenu.classList.add("hidden");
     OpenMenu.classList.remove("hidden");
     Mobile_Menu.classList.add("hidden");
   }

@@ -806,7 +806,7 @@ li > h3 {
   transform: scale(0.9);
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
   /* ANIMATION STARTS HERE */
 
   html,
