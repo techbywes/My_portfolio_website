@@ -17,70 +17,75 @@
     />
 
     <title>TechbyWes</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
   </head>
   <body>
-    <!-- BODY STARTS FROM HERE --> 
-    <header class="header_container">
+    <!-- BODY STARTS FROM HERE -->
+    <div class="my_container">
+      <header class="header_container">
+        <nav class="nav_container">
+          <div class="logo_menu_c0ntainer">
+            <div class="logo_conatiner">
+              <div class="logo_logo-text_div"></div>
+              <a href="#"
+                ><img src="../images/quality.png" class="logo_im"
+              /></a>
+              <h1 class="logo_text hideanimation">
+                <a href="#"></a>
+                TECHBYWES
+              </h1>
 
-      
-      <nav class="nav_container ">
-        <div class="logo_menu_c0ntainer ">
-          <div class="logo_conatiner">
-            <div class="logo_logo-text_div"></div>
-            <a href="#"><img src="../images/quality.png" class="logo_im" /></a>
-            <h1 class="logo_text hideanimation">
-              <a href="#"></a>
-              TECHBYWES
+              <!-- MOBILE MENU ICON STARTS HERE -->
+              <div class="mobile_menu_icon_div">
+                <img
+                  id="menu_open"
+                  src="/images/menu_open.png"
+                  class="logo_icon"
+                />
+                <img
+                  id="menu_close"
+                  src="/images/menu_close.png"
+                  class="logo_icon2"
+                />
+              </div>
+              <!-- MOBILE MENU ICON ENDS HERE -->
+            </div>
+          </div>
+          <ul class="menu_ul">
+            <li id="close_up1" class="menu_li">
+              <a href="#" class="menu_a">Home</a>
+            </li>
+            <li id="close_up2" class="menu_li">
+              <a href="#About" class="menu_a">About</a>
+            </li>
+            <li id="close_up3" class="menu_li">
+              <a href="#Services" class="menu_a">Skills</a>
+            </li>
+            <li id="close_up4" class="menu_li">
+              <a href="#Portfolio" class="menu_a">Portfolio</a>
+            </li>
+            <li id="close_up5" class="menu_li">
+              <a href="#Contact" class="menu_a">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- NAVBAR ENDS HERE -->
+        <div class="Hero_wrapper">
+          <div class="left_side_container">
+            <h2 class="hello_text hideanimation">Hello! I’m</h2>
+            <h1 class="name_text hideanimation">
+              <span class="wisdom_text changing-color hideanimation"
+                >Wisdom</span
+              >
+              Samuel
             </h1>
 
-            <!-- MOBILE MENU ICON STARTS HERE -->
-            <div class="mobile_menu_icon_div">
-              <img
-                id="menu_open"
-                src="/images/menu_open.png"
-                class="logo_icon"
-              />
-              <img
-                id="menu_close"
-                src="/images/menu_close.png"
-                class="logo_icon2"
-              />
+            <div class="container">
+              <div class="text"></div>
             </div>
-            <!-- MOBILE MENU ICON ENDS HERE -->
-          </div>
-        </div>
-        <ul class="menu_ul">
-          <li class="menu_li">
-            <a href="#" class="menu_a">Home</a>
-          </li>
-          <li class="menu_li">
-            <a href="#About" class="menu_a">About</a>
-          </li>
-          <li class="menu_li">
-            <a href="#Services" class="menu_a">Skills</a>
-          </li>
-          <li class="menu_li">
-            <a href="#Portfolio" class="menu_a">Portfolio</a>
-          </li>
-          <li class="menu_li">
-            <a href="#Contact" class="menu_a">Contact</a>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- NAVBAR ENDS HERE -->
-      <div class="Hero_wrapper">
-        <div class="left_side_container">
-          <h2 class="hello_text hideanimation">Hello! I’m</h2>
-          <h1 class="name_text hideanimation">
-            <span class="wisdom_text changing-color hideanimation">Wisdom</span>
-            Samuel
-          </h1>
-
-          <div class="container">
-            <div class="text"></div>
-          </div>
-          <!--
+            <!--
           <h2 data-text="Frontend" class="developer_text">
             Frontend
 
@@ -89,212 +94,224 @@
             >
           </h2> -->
 
-          <!-- <p class="paragraph_text">
+            <!-- <p class="paragraph_text">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores
           </p> -->
-          <div class="logos_div">
-            <div class="github_logo_div hideanimation">
-              <img src="../images/github.png" alt="github" class="github_img" />
+            <div class="logos_div">
+              <div class="github_logo_div hideanimation">
+                <img
+                  src="../images/github.png"
+                  alt="github"
+                  class="github_img"
+                />
+              </div>
+              <div class="linkiden_logo_div">
+                <img src="../images/linkedin.png" alt="" class="linkiden_img" />
+              </div>
+              <div class="twitter_logo_div">
+                <img src="../images/twitter.png" alt="" class="twitter_img" />
+              </div>
+              <div class="tiktok_logo_div">
+                <img src="../images/tik-tok.png" alt="" class="tiktok_img" />
+              </div>
             </div>
-            <div class="linkiden_logo_div">
-              <img src="../images/linkedin.png" alt="" class="linkiden_img" />
-            </div>
-            <div class="twitter_logo_div">
-              <img src="../images/twitter.png" alt="" class="twitter_img" />
-            </div>
-            <div class="tiktok_logo_div">
-              <img src="../images/tik-tok.png" alt="" class="tiktok_img" />
+            <button class="cv_btn">Download CV</button>
+          </div>
+
+          <div class="right_side_container">
+            <div class="image_container">
+              <img src="../images/man.png" alt="" class="Hero_imge" />
             </div>
           </div>
-          <button class="cv_btn">Download CV</button>
         </div>
-
-        <div class="right_side_container">
-          <div class="image_container">
-            <img src="../images/man.png" alt="" class="Hero_imge" />
+      </header>
+      <section id="About" class="section_container">
+        <div class="innerSection_container hideanimation">
+          <div class="leftImage_container">
+            <img src="../images/man.png" alt="" class="aboutMe_image" />
           </div>
-        </div>
-      </div>
-    </header>
-    <section id="About" class="section_container">
-      <div class="innerSection_container hideanimation">
-        <div class="leftImage_container">
-          <img src="../images/man.png" alt="" class="aboutMe_image" />
-        </div>
-        <div class="righttext_andbutton_container">
-          <h2 class="about_me_text">About <span class="me_span">Me</span></h2>
-          <!-- <h3 class="frontend_text">Frontend Developer</h3> -->
+          <div class="righttext_andbutton_container">
+            <h2 class="about_me_text">About <span class="me_span">Me</span></h2>
+            <!-- <h3 class="frontend_text">Frontend Developer</h3> -->
 
-          <p class="paragraph2_text">
-            Hey wisdom here! I'm an enthusiastic
-            <span class="enginner_text changing-color2">Frontend Engineer</span>
-            who thrives on designing digital products that elevate people's
-            everyday lives.
-          </p>
-          <!-- <button class="read_more_btn">Read More</button> -->
-        </div>
-      </div>
-    </section>
-    <section id="Services" class="ourServices_wrapper">
-      <h2 class="our_services_text hideanimation">
-        My Skill <span class="ourservices_span">Arsenal</span>
-      </h2>
-      <div class="containers_div hideanimation">
-        <!-- SKILLS BAR STARTS FROM HERE -->
-        <div class="skills hideanimation">
-          <!-- create a div --><!-- heading -->
-          <li>
-            <h3 class="skill_label">HTML</h3>
-            <span class="bar"><span class="html"></span></span>
-            <!-- skill bar 1 -->
-          </li>
-
-          <li>
-            <h3 class="skill_label">CSS</h3>
-            <span class="bar"><span class="css"></span></span
-            ><!-- skill bar 2 -->
-          </li>
-
-          <li>
-            <h3 class="skill_label">JAVASCRIPT</h3>
-            <span class="bar"><span class="javascript"></span></span
-            ><!-- skill bar 3 -->
-          </li>
-
-          <li>
-            <h3 class="skill_label">REACT</h3>
-            <span class="bar"><span class="jquery"></span></span
-            ><!-- skill bar 4 -->
-          </li>
-        </div>
-      </div>
-    </section>
-    <section id="Portfolio" class="latestproject_div">
-      <h1 class="latestproject_text hideanimation">
-        Few Of My
-        <span class="latest_project_span changing-color4"> Project's</span>
-      </h1>
-      <p class="project_description hideanimation">
-        All made by me with passion and a touch of uniquness.
-      </p>
-      <div class="div_1_6_container ">
-        <div class="images_123_div hideanimation">
-          <div class="div_1 effect-duke add_me hideanimation">
-            <a href="https://coactlifebike.com/"
-              ><img
-                src="../images/coactlifebike.jpg"
-                alt=""
-                id="coactlife"
-                class="projects_image"
-            /></a>
-            <h2 class="sites_text changing-color3">Coactlifebike</h2>
-            <p>
-              <a href="https://coactlifebike.com/" class="visit_site_text"
-                >VISIT WEBSITE</a
+            <p class="paragraph2_text">
+              Hey wisdom here! I'm an enthusiastic
+              <span class="enginner_text changing-color2"
+                >Frontend Engineer</span
               >
+              who thrives on designing digital products that elevate people's
+              everyday lives.
             </p>
-          </div>
-
-          <div class="div_2 effect-duke add_me hideanimation">
-            <a href="https://bidianahair.com/" id="bidiana">
-              <img src="../images/bidianahair.jpg" alt="" class="projects_image"
-            /></a>
-            <h2 class="sites_text changing-color3">Bidianahair</h2>
-            <p>
-              <a href="https://bidianahair.com/" class="visit_site_text"
-                >VISIT WEBSITE</a
-              >
-            </p>
-          </div>
-          <div class="div_3 effect-duke add_me hideanimation">
-            <a href="https://ujvbeauty.com/">
-              <img
-                id="addeffect"
-                src="../images/ujvbeauty.jpg"
-                alt=""
-                class="projects_image"
-            /></a>
-            <h2 class="sites_text changing-color3">Ujvbeauty</h2>
-            <p>
-              <a href="https://ujvbeauty.com/" class="visit_site_text"
-                >VISIT WEBSITE</a
-              >
-            </p>
+            <!-- <button class="read_more_btn">Read More</button> -->
           </div>
         </div>
-        <div class="image_456_div hideanimation">
-          <div class="div_4 effect-duke add_me hideanimation">
-            <a href="https://ebylicious.com/">
-              <img
-                id="addeffect"
-                src="../images/ebylicious.jpg"
-                alt=""
-                class="projects_image"
-            /></a>
+      </section>
+      <section id="Services" class="ourServices_wrapper">
+        <h2 class="our_services_text hideanimation">
+          My Skill <span class="ourservices_span">Arsenal</span>
+        </h2>
+        <div class="containers_div hideanimation">
+          <!-- SKILLS BAR STARTS FROM HERE -->
+          <div class="skills hideanimation">
+            <!-- create a div --><!-- heading -->
+            <li>
+              <h3 class="skill_label">HTML</h3>
+              <span class="bar"><span class="html"></span></span>
+              <!-- skill bar 1 -->
+            </li>
 
-            <h2 class="sites_text changing-color3">Ebylicious</h2>
-            <p>
-              <a href="https://ebylicious.com/" class="visit_site_text"
-                >VISIT WEBSITE</a
-              >
-            </p>
-          </div>
-          <div class="div_6 effect-duke add_me hideanimation">
-            <a href="https://moniwoman.com/"
-              ><img
-                id="addeffect"
-                src="../images/moniwoman.jpg"
-                alt=""
-                class="projects_image"
-            /></a>
-            <h2 class="sites_text changing-color3">Moniwoman</h2>
-            <p>
-              <a href="https://moniwoman.com/" class="visit_site_text"
-                >VISIT WEBSITE</a
-              >
-            </p>
-          </div>
-          <div class="div_6 effect-duke add_me hideanimation">
-            <a href="#"
-              ><img
-                id="addeffect"
-                src="../images/coactlife.jpg"
-                alt=""
-                class="projects_image"
-            /></a>
-            <h2 class="sites_text changing-color3">Shad Finder</h2>
-            <p>
-              <a href="#" class="visit_site_text"
-                >VISIT WEBSITE</a
-              >
-            </p>
+            <li>
+              <h3 class="skill_label">CSS</h3>
+              <span class="bar"><span class="css"></span></span
+              ><!-- skill bar 2 -->
+            </li>
+
+            <li>
+              <h3 class="skill_label">JAVASCRIPT</h3>
+              <span class="bar"><span class="javascript"></span></span
+              ><!-- skill bar 3 -->
+            </li>
+
+            <li>
+              <h3 class="skill_label">REACT</h3>
+              <span class="bar"><span class="jquery"></span></span
+              ><!-- skill bar 4 -->
+            </li>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="Contact" class="form_section_div">
-      <!-- <h2 class="contact_me_tex hideanimation">
+      </section>
+      <section id="Portfolio" class="latestproject_div">
+        <h1 class="latestproject_text hideanimation">
+          Few Of My
+          <span class="latest_project_span changing-color4"> Project's</span>
+        </h1>
+        <p class="project_description hideanimation">
+          All made by me with passion and a touch of uniquness.
+        </p>
+        <div class="div_1_6_container">
+          <div class="images_123_div hideanimation">
+            <div class="div_1 effect-duke add_me hideanimation">
+              <a href="https://coactlifebike.com/"
+                ><img
+                  src="../images/coactlifebike.jpg"
+                  alt=""
+                  id="coactlife"
+                  class="projects_image"
+              /></a>
+              <h2 class="sites_text changing-color3">Coactlifebike</h2>
+              <p>
+                <a href="https://coactlifebike.com/" class="visit_site_text"
+                  >VISIT WEBSITE</a
+                >
+              </p>
+            </div>
+
+            <div class="div_2 effect-duke add_me hideanimation">
+              <a href="https://bidianahair.com/" id="bidiana">
+                <img
+                  src="../images/bidianahair.jpg"
+                  alt=""
+                  class="projects_image"
+              /></a>
+              <h2 class="sites_text changing-color3">Bidianahair</h2>
+              <p>
+                <a href="https://bidianahair.com/" class="visit_site_text"
+                  >VISIT WEBSITE</a
+                >
+              </p>
+            </div>
+            <div class="div_3 effect-duke add_me hideanimation">
+              <a href="https://ujvbeauty.com/">
+                <img
+                  id="addeffect"
+                  src="../images/ujvbeauty.jpg"
+                  alt=""
+                  class="projects_image"
+              /></a>
+              <h2 class="sites_text changing-color3">Ujvbeauty</h2>
+              <p>
+                <a href="https://ujvbeauty.com/" class="visit_site_text"
+                  >VISIT WEBSITE</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="image_456_div hideanimation">
+            <div class="div_4 effect-duke add_me hideanimation">
+              <a href="https://ebylicious.com/">
+                <img
+                  id="addeffect"
+                  src="../images/ebylicious.jpg"
+                  alt=""
+                  class="projects_image"
+              /></a>
+
+              <h2 class="sites_text changing-color3">Ebylicious</h2>
+              <p>
+                <a href="https://ebylicious.com/" class="visit_site_text"
+                  >VISIT WEBSITE</a
+                >
+              </p>
+            </div>
+            <div class="div_6 effect-duke add_me hideanimation">
+              <a href="https://moniwoman.com/"
+                ><img
+                  id="addeffect"
+                  src="../images/moniwoman.jpg"
+                  alt=""
+                  class="projects_image"
+              /></a>
+              <h2 class="sites_text changing-color3">Moniwoman</h2>
+              <p>
+                <a href="https://moniwoman.com/" class="visit_site_text"
+                  >VISIT WEBSITE</a
+                >
+              </p>
+            </div>
+            <div class="div_6 effect-duke add_me hideanimation">
+              <a href="#"
+                ><img
+                  id="addeffect"
+                  src="../images/coactlife.jpg"
+                  alt=""
+                  class="projects_image"
+              /></a>
+              <h2 class="sites_text changing-color3">Shad Finder</h2>
+              <p>
+                <a href="#" class="visit_site_text">VISIT WEBSITE</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Contact" class="form_section_div">
+        <!-- <h2 class="contact_me_tex hideanimation">
         Contact
         <p class="contactme_span">Me</p>
       </h2> -->
-      <div class="like_linkup_div">
-        <div class="like_it_div">
-          <h2 class="like_it changing-color5 hideanimation">Convinced  Yet?</h2>
-          <p class="like_it_description hideanimation">
-            Thank you for taking the time to visit my profile. I am currently
-            seeking opportunities to join a dynamic team of talented
-            developers. If you believe that our skills and expertise align,
-            I welcome the opportunity to connect.
-          </p>
+        <div class="like_linkup_div">
+          <div class="like_it_div">
+            <h2 class="like_it changing-color5 hideanimation">
+              Convinced Yet?
+            </h2>
+            <p class="like_it_description hideanimation">
+              Thank you for taking the time to visit my profile. I am currently
+              seeking opportunities to join a dynamic team of talented
+              developers. If you believe that our skills and expertise align, I
+              welcome the opportunity to connect.
+            </p>
+          </div>
+          <div class="link_up_div">
+            <h1 class="linkup_title changing-color5 hideanimation">
+              Alright wait no further!
+            </h1>
+            <p class="link_up_description hideanimation">
+              Reach out to me via any convenient method below 👇
+            </p>
+          </div>
         </div>
-        <div class="link_up_div">
-          <h1 class="linkup_title changing-color5 hideanimation">Alright wait no further!</h1>
-          <p class="link_up_description hideanimation"> Reach out
-            to me via any  convenient method below 👇</p>
-        </div>
-      </div>
 
-      <!-- <div class="form-container hideanimation">
+        <!-- <div class="form-container hideanimation">
         <form class="">
           <div class="form-group">
             <input
@@ -327,38 +344,42 @@
           </div>
         </form>
       </div> -->
-      <footer class="footer_div">
-        <div class="logos_div">
+        <footer class="footer_div">
+          <div class="logos_div">
+            <div id="expand" class="linkiden_logo_div">
+              <a href="mailto:info@techbywes.com"
+                ><img id="gmail_icon" src="../images/gmail.png" alt="Email"
+              /></a>
+            </div>
 
-          <div id="expand" class="linkiden_logo_div">
-            <a href="mailto:info@techbywes.com"
-              ><img id="gmail_icon" src="../images/gmail.png" alt="Email"
-            /></a>
+            <div id="expand" class="linkiden_logo_div">
+              <a href="https://wa.me/message/2IPK42PQX3H3F1"
+                ><img
+                  id="gmail_icon"
+                  src="../images/whatsapp (1).png"
+                  alt="whatsapp"
+              /></a>
+            </div>
+
+            <div id="expand" class="tiktok_logo_div">
+              <a href="tel:+2348152211302">
+                <img id="phone_icon" src="../images/phone.png" alt="phone"
+              /></a>
+            </div>
           </div>
+          <!-- <h4 class="footer_text">© 2023 Tecbywes</h4> -->
+        </footer>
+        <button
+          class="scrollup_btn"
+          id="scrollUpButton"
+          onclick="scrollToTop()"
+        >
+          &#8593;
+        </button>
+      </section>
 
-          <div id="expand" class="linkiden_logo_div">
-            <a href="https://wa.me/message/2IPK42PQX3H3F1"
-              ><img
-                id="gmail_icon"
-                src="../images/whatsapp (1).png"
-                alt="whatsapp"
-            /></a>
-          </div>
-
-          <div id="expand" class="tiktok_logo_div">
-            <a href="tel:+2348152211302">
-              <img id="phone_icon" src="../images/phone.png" alt="phone"
-            /></a>
-          </div>
-        </div>
-        <!-- <h4 class="footer_text">© 2023 Tecbywes</h4> -->
-      </footer>
-      <button class="scrollup_btn" id="scrollUpButton" onclick="scrollToTop()">
-        &#8593;
-      </button>
-    </section>
-
-    <!-- JAVASCRIPT WAS LINKED BELOW HERE -->
-    <script src="script.js"></script>
+      <!-- JAVASCRIPT WAS LINKED BELOW HERE -->
+      <script src="script.js"></script>
+    </div>
   </body>
 </html>
