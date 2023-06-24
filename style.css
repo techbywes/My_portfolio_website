@@ -224,12 +224,17 @@ body {
   border-radius: 50px;
   font-weight: bold;
   font-size: 1rem;
-  color: whitesmoke;
+  
   cursor: pointer;
   border: 1px solid rgba(255, 249, 249, 0.107);
   background-color: #252734;
   transition: transform 0.9s ease;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.126);
+}
+
+.cv_btn > a{
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 .cv_btn:hover {

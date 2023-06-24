@@ -102,13 +102,15 @@ function toggleMenu() {
 }
 // MENU ANIMATE ENDS HERE
 
-downloadButton.addEventListener("click", function () {
-  const link = document.createElement("a");
-  link.href =
-    "https://drive.google.com/file/d/1-0_65jtJc4cjoxEu1BNcz0_G1s89bDtY/view?usp=drivesdk";
-  link.download = "your-cv.pdf";
-  link.click();
-});
+// CV BTN DOWN STARTS FROM HERE
+// downloadButton.addEventListener("click", function () {
+//   const link = document.createElement("a");
+//   link.href =
+//     "https://drive.google.com/file/d/1-0_65jtJc4cjoxEu1BNcz0_G1s89bDtY/view?usp=drivesdk";
+//   link.download = "your-cv.pdf";
+//   link.click();
+// });
+// CV BTN DOWN ENDS FROM HERE
 
 //
 
