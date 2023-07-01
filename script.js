@@ -17,15 +17,14 @@ const ServicesSection = document.querySelector(".ourServices_wrapper");
 const PortfolioSection = document.querySelector(".latestproject_div");
 const ContactSection = document.querySelector(".form_section_div");
 const menu_items1 = document.getElementById("close_up1");
-const menu_items2 =  document.getElementById("close_up2");
-const menu_items3 =  document.getElementById("close_up3");
-const menu_items4 =  document.getElementById("close_up4");
-const menu_items5 =  document.getElementById("close_up5");
+const menu_items2 = document.getElementById("close_up2");
+const menu_items3 = document.getElementById("close_up3");
+const menu_items4 = document.getElementById("close_up4");
+const menu_items5 = document.getElementById("close_up5");
 // const animate = document.querySelector(".animatemenu");
 
 Mobile_Menu.classList.add("hidden");
 CloseMenu.classList.add("hidden");
-
 
 let isOpen = false;
 
@@ -35,38 +34,38 @@ menu_items1.addEventListener("click", () => {
     OpenMenu.classList.remove("hidden");
     Mobile_Menu.classList.add("hidden");
   }
-})
-menu_items2.addEventListener("click", ()=> {
+});
+menu_items2.addEventListener("click", () => {
   if (!isOpen) {
     CloseMenu.classList.add("hidden");
     OpenMenu.classList.remove("hidden");
     Mobile_Menu.classList.add("hidden");
   }
-})
+});
 
-menu_items3.addEventListener("click", ()=> {
+menu_items3.addEventListener("click", () => {
   if (!isOpen) {
     CloseMenu.classList.add("hidden");
     OpenMenu.classList.remove("hidden");
     Mobile_Menu.classList.add("hidden");
   }
-})
+});
 
-menu_items4.addEventListener("click", ()=> {
+menu_items4.addEventListener("click", () => {
   if (!isOpen) {
     CloseMenu.classList.add("hidden");
     OpenMenu.classList.remove("hidden");
     Mobile_Menu.classList.add("hidden");
   }
-})
+});
 
-menu_items5.addEventListener("click", ()=> {
+menu_items5.addEventListener("click", () => {
   if (!isOpen) {
     CloseMenu.classList.add("hidden");
     OpenMenu.classList.remove("hidden");
     Mobile_Menu.classList.add("hidden");
   }
-})
+});
 
 OpenMenu.addEventListener("click", () => {
   if (!isOpen) {
